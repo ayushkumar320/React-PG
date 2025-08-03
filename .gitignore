@@ -1,0 +1,15 @@
+// Give a gitignore for react
+# React project .gitignore file
+# Dependencies
+/node_modules
+# Build output
+/build
+/dist
+# Logs
+/logs
+# Runtime data
+/pids
+# Coverage reports
+/coverage
+# Environment variables 
+**.env
