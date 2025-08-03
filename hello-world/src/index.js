@@ -4,10 +4,24 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+// Creating my own component
+// Component is a simple JS function with first letter capitalized, if not capitalized, React will not read it as a component
+
+function MyButton() {
+  return <button>Click here!</button>;    // This is a jsx element
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/* Rendering the custom component */}
+    <MyButton />
     <App />
+    {/* We can use HTML built in tags like this */}
+    <input type="text" placeholder="Type here..." />
+    <button>Submit</button>
+
+
   </React.StrictMode>
 );
 
