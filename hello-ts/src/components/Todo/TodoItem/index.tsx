@@ -1,8 +1,18 @@
 import React from "react";
 import "./style.css"
-const TodoItem: React.FC = () => {
+
+interface TodoItemProps {
+  // Define the properties for TodoItem if needed
+  title?: string,
+  color?: string
+}
+
+const TodoItem: React.FC<TodoItemProps> = (props) => {
+  // JSX.Element - Type for the return value of a component
   return (
-    <li>Code</li>
+    <li style={{ color: props.color }}>
+      {props.title}
+    </li>
   )
 }
 
