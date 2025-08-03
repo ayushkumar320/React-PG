@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Importing a custom component
+import Button from "./components/Button.jsx";
+
 // function App() {
 //   return <p> This is a p tag</p>
 //   <div>
@@ -21,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hello from react app</h1>
+      <Button />
     </div>
   );
 }
