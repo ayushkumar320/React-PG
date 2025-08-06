@@ -1,8 +1,11 @@
 import react from 'react';
-
-const Block: React.FC = () => {
+interface BlockProps {
+  value?: string 
+  onClick?: () => void
+}
+const Block: React.FC<BlockProps> = (props) => {
   return (
-    <div className='block'></div>
+    <div onClick={props.onClick} className='block'>{props.value}</div>
   )
 }
 
