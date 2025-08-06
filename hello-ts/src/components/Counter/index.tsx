@@ -24,12 +24,12 @@ const Counter: React.FC = () => {
   // Using useEffect to log the counter value whenever it changes
   // Empty dependencies array means whole component
 
-  
+
   // Mounting
   useEffect(() => {
     console.log("Counter mounted!");
 
-    // Unmounting
+    // Unmounting - return wale unmount function hote hai
     return function () {
       console.log("Unmount counter!");
       // This function will run when the component is unmounted, useful for cleanup
