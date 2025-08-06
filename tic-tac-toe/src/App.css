@@ -1,0 +1,12 @@
+.block {
+  border: 1px solid;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.row {
+  display: flex;
+}
+.board {
+  padding: 20px;
+}
