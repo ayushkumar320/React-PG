@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Todo from "./components/Todo/index" 
 import Counter from "./components/Counter/index";
 
@@ -34,13 +34,15 @@ const myTodoItems = [
 // JSX.Element - Type for the return value of a component
 
 const App: React.FC = () => {
+  const [state, setState] = useState<boolean>(true);
   return (
     <div style={{border: "1px solid black", padding: "10px"}} 
       // onClick={() => alert("Hello")} Props
     >
       <h1>This is a Todo List</h1>
       <Todo items={myTodoItems} />
-      <Counter />
+      <button onClick={(e) => setState(!state)}>Toggle Counter</button>
+      {state ? <Counter /> : ""}
     </div>
   )
 }
